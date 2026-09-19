@@ -20,11 +20,11 @@ function GoalCard({ goal, onEdit, onDelete }) {
         </div>
       </div>
 
+      <span className="progress__label">{pct}%</span>
       <div className="progress">
         <div className="progress__track">
           <div className="progress__fill" style={{ width: `${pct}%` }} />
         </div>
-        <span className="progress__label">{pct}%</span>
       </div>
 
       <div className="goal-card__amounts">

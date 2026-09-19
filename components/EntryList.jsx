@@ -10,7 +10,7 @@ function EntryRow({ entry, onEdit, onDelete }) {
     : entry.source
 
   return (
-    <div className="entry-row">
+    <div className="entry-row" style={{ borderLeft: `4px solid ${isExpense ? 'var(--color-error)' : 'var(--color-success)'}` }}>
       <div className="entry-row__main">
         <div className="entry-row__icon" style={{ background: isExpense ? 'rgba(220,38,38,0.1)' : 'rgba(22,163,74,0.1)' }}>
           {isExpense ? '↓' : '↑'}
